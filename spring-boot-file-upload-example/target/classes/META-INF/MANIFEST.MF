@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-Title: spring-boot-file-upload
+Implementation-Version: 1.0
+Implementation-Vendor-Id: com.mkyong
+Build-Jdk: 1.7.0_79
+Built-By: JJJ
+Created-By: Maven Integration for Eclipse
+Implementation-URL: http://projects.spring.io/spring-boot/spring-boot-
+ file-upload/
+

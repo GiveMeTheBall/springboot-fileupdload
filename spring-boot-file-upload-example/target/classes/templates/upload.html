@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<h1>Spring Boot file upload example</h1>
+
+<form method="POST" action="/upload" enctype="multipart/form-data">
+    
+    <input type="file" name="file" onChange="document.getElementsByName('filePath')[0].value=getPath(this)" />
+      <input type="hidden" name="filePath" />
+    <input type="submit" value="Submit" />
+</form>
+
+</body>
+<script type="text/javascript">
+
+function getPath(obj) 
+{ 
+  if(obj) 
+    { 
+    if (window.navigator.userAgent.indexOf("MSIE")>=1) 
+      { 
+        obj.select(); 
+      return document.selection.createRange().text; 
+      } 
+    else 
+      { 
+      if(obj.files) 
+        { 
+    	  
+        return window.URL.createObjectURL(obj.files[0].mozFullPath); 
+        } 
+      return obj.value; 
+
+      } 
+
+    return obj.value; 
+
+    } 
+
+} 
+
+		
+</script>
+</html>
+
+
